@@ -1,0 +1,16 @@
+<form action = "">
+    <label for="nombreAuto">Nombre del carro: </label>
+    <input type="text"[(ngModel)]="auto.nombreAuto">
+    <label for="modelo">Modelo del carro: </label>
+    <input type="text" [(ngModel)]="auto.modelo">
+    <label for="empresa">Empresa del carro: </label>
+    <input type="text" [(ngModel)]="auto.empresa">
+    <label for="precio">Precio: </label>
+    <input type="number" [(ngModel)]="auto.precio">
+    <label for="descripcion">Description: </label>
+    <input type="text" placeholder="Escribe todo lo importante del vehiculo: " [(ngModel)]="auto.descripcion">
+    
+
+    <button type ="button" (click)="guardarAuto()">Guardar vehiculo</button>
+    
+</form>
