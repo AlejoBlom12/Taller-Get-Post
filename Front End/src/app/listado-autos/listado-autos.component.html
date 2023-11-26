@@ -1,23 +1,23 @@
-  <table class="tabla">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Nombre del vehiculo: </th>
-        <th>Modelo del vehiculo: </th>
-        <th>Empresa del vehiculo: </th>
-        <th>Precio: </th>
-        <th>Descripcion:</th>
-        <th>Imagen: </th>
-      </tr>
-    </thead>
-      <tbody>
-      <tr *ngFor="let auto of autoslista">
-            
-          <td>{{auto.nombreAuto}}</td>
-          <td>{{auto.modelo}}</td>
-          <td>{{auto.empresa}}</td>
-          <td>{{auto.precio}}</td>
-          <td>{{auto.descripcion}}</td>
-      </tr>
-    </tbody>
-  </table>
+<table class="tabla" border="1px">
+  <thead>
+    <tr>
+      <th>Nombre del vehiculo: </th>
+      <th>Modelo del vehiculo: </th>
+      <th>Empresa del vehiculo: </th>
+      <th>Precio: </th>
+      <th>Descripcion:</th>
+      <th>Imagen: </th>
+    </tr>
+  </thead>
+    <tbody>
+    <tr *ngFor="let auto of autoslista">
+          
+        <td>{{auto.nombreAuto}}</td>
+        <td>{{auto.modelo}}</td>
+        <td>{{auto.empresa}}</td>
+        <td>{{auto.precio}}</td>
+        <td>{{auto.descripcion}}</td>
+        <td></td>
+    </tr>
+  </tbody>
+</table>

@@ -4,7 +4,7 @@ const app = express();
 const cors = require('cors');
 const autosRoutes = require('../routes/autos.routes')
 
-const port = 3000;
+const port = 3500;
 
 app.use(cors());
 app.use(express.json());

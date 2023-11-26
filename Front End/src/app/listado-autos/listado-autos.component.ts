@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { PostAutoService } from "../Services/guardar/post-auto.service";
 import * as e from 'express';
-import { FormatoAutosComponent } from "../formato-autos/formato-autos.component";
+
 
 
 @Component({
@@ -10,7 +10,7 @@ import { FormatoAutosComponent } from "../formato-autos/formato-autos.component"
   styleUrls: ['./listado-autos.component.scss']
 })
 export class ListadoAutosComponent {
-  constructor(private listadoAutos :PostAutoService, si: FormatoAutosComponent){
+  constructor(private listadoAutos :PostAutoService){
 
   }
   public autoslista: any [] = []

@@ -7,26 +7,26 @@ import { catchError, Observable, throwError } from "rxjs";
 })
 export class PostAutoService {
 
-  baseUrl1 = "http://localhost:3500/guardandoAuto"
-  baseUrl2 = "http://localhost:3500/listaAutos"
 
   constructor(public http: HttpClient) { }
 
 
   guardarAuto (auto: any): Observable <any>{
-    return this.http.post(this.baseUrl1, auto)
+    return this.http.post("http://localhost:3500/guardandoAuto", auto)
       .pipe(
         catchError(e =>{
-          return throwError("Se ha producido un error" + e)
+          console.log(e)
+          return e
         })
       )
   }
 
   listadoAutos (): Observable<any>{
-    return this.http.get(this.baseUrl2)
+    return this.http.get("http://localhost:3500/listaAutos")
         .pipe(
           catchError(er =>{
-            return  throwError("Se ha producido un error" + er)
+            console.log(er)
+          return er
           })
         )
   }

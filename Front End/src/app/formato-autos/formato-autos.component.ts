@@ -14,7 +14,7 @@ export class FormatoAutosComponent {
     modelo : "",
     empresa : "",
     precio : 0,
-    descripcion : "",
+    descripcion : ""
   }
   constructor(public serviceAutos: PostAutoService){}
 

@@ -7,7 +7,7 @@ const { Listado_Autos} = require("../services/autosService")
 const controlador = {}
 
 controlador.getAutos = async (req, res) => {
-      const autos = await Listado_Autos()
+      const autos = await modeloAutos.find()
       res.json(autos)
 }
 
